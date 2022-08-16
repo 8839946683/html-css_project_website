@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(10, 10, 10);
+
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            height: 55px;
+            color: white;
+        }
+
+        nav ul li {
+            padding: 0px 10px;
+
+        }
+
+        .brand img {
+            width: 60px;
+
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+        }
+
+        .container {
+            min-height: 70vh;
+            background-color: black;
+            color: white;
+
+            width: 70%;
+            margin: 23px auto;
+            border-radius: 12px;
+            padding: 34px;
+            background: url('bg6.jpg');
+            background-size: cover;
+            display: flex;
+        }
+
+        .bottom {
+            background-color: black;
+            height: 100px;
+            position: sticky;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+
+        }
+
+        .icons {
+            margin: 8px 0px;
+
+        }
+
+        .icons i {
+            cursor: pointer;
+        }
+
+        #myprogressbar {
+            width: 80vw;
+            cursor: pointer;
+        }
+
+        .song-item {
+            height: 50px;
+            display: flex;
+            background-color: white;
+            width: 100%;
+            color: black;
+            margin: 12px 0px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 25px;
+
+        }
+
+        .song-item img {
+            width: 43px;
+            margin: 0 17px;
+            border-radius: 15px;
+
+        }
+
+        .timestamp {
+            margin: 0 20px;
+        }
+
+        .timestamp i {
+            cursor: pointer;
+        }
+
+        .songitem-container {
+            margin-top: 74px;
+
+        }
+
+        .songinfo {
+            position: absolute;
+            left: 10vw;
+        }
+
+        .songinfo img {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .songinfo img:hover{
+          opacity: 1;
+          
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="bg5.webp" alt="spotify"> spotify</li>
+            <li>home</li>
+            <li>about</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="songlist">
+            <h1> Best of Ncs- no copyright songs</h1>
+            <div class="songitem-container">
+
+                <div class="song-item">
+                    <img src="cover1.jpg" alt="1"><span>Let me play you</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i class="far fa-x fa-play-circle"
+                                id="masterPlay"></i></span></span>
+                </div>
+                <div class="song-item">
+                    <img src="cover1.jpg" alt="1"><span>Let me play you</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i class="far fa-x fa-play-circle"
+                                id="masterPlay"></i></span> </span>
+                </div>
+                <div class="song-item">
+                    <img src="cover1.jpg" alt="1"><span>Let me play you</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i class="far fa-x fa-play-circle"
+                                id="masterPlay"></i></span> </span>
+                </div>
+                <div class="song-item">
+                    <img src="cover1.jpg" alt="1"><span>Let me play you</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i class="far fa-x fa-play-circle"
+                                id="masterPlay"></i></span> </span>
+                </div>
+                <div class="song-item">
+                    <img src="cover1.jpg" alt="1"><span>Let me play you</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i class="far fa-x fa-play-circle"
+                                id="masterPlay"></i></span> </span>
+                </div>-
+                <div class="song-item">
+                    <img src="cover1.jpg" alt="1"><span>Let me play you</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i class="far fa-x fa-play-circle"
+                                id="masterPlay"></i></span> </span>
+                </div>
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressbar" min="0" max="100">
+
+        <div class="icons">
+
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="fas fa-3x fa-play-circle" id="masterplay"></i>
+            <i class="fas fa-3x fa-step-forward" id="after"></i>
+                
+            </i> 
+        </div>
+
+        <div class="songinfo">
+            <img src="playing.gif" width="42px" alt="1"> let me love you
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>H
