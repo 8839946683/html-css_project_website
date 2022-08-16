@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>food order</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <nav id="navbar">
+    <div id="logo">
+        <img src="./images/logo1.webp" alt="not">
+    </div>
+    
+       <ul> 
+            <li class="main"> <a href="#"> home</a></li>
+            <li class="main"><a href="#">about </a></li>
+            <li class="main"> <a href="#"> services</a></li>
+          
+        </ul>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <form>
+                <input type="text" placeholder="Search.." name="search" style=" box-shadow:0 0 10px  rgb(241, 107, 44)  ;border-radius: 8px; height: 20px; width:250px;">
+                <button onclick=greet(); type="submit"><i class="fa fa-search"></i></button>
+                <div class="greet"></div>
+           </form>
+               
+</nav>
+<section id="home">
+    <h1 class="h-primary">welcome to ott services</h1>
+    <p>Lorem ipsum dolor sit amet consolestias, vel blanditiis nam laboriosam ipsum aliquid asudfgsdfuyfdgdiyfgdsifgsdiudtyfiydsgfidsyfg
+    </p>
+    <p>Lorem ipsum, dolor sit amet copeorro blanditiis commodi cumque excepturi id!</p>
+<button class="btn"> order now</button>
+</section>
+<section class="services-container">
+    <h1 class="h-primary center"> Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="./images/logo9.webp" alt="">
+            <h2 class="h-secondary center">Net Flix</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae harum deleniti quae enim reprehenderit aperiam voluptatum debitis fugit, quasi minus autem molestiae modi odio adipisci ducimus distinctio a, eius ullam.
+
+            </p>
+        </div>
+        <div class="box">
+            <img src="./images/logo10.png" alt="">
+            <h2 class="h-secondary center">Prime Video</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae harum deleniti quae enim reprehenderit aperiam voluptatum debitis fugit, quasi minus autem molestiae modi odio adipisci ducimus distinctio a, eius ullam.
+
+            </p>
+        </div>
+        <div class="box">
+            <img src="./images/logo11.png" alt="">
+            <h2 class="h-secondary center">Zee 5</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae harum deleniti quae enim reprehenderit aperiam voluptatum debitis fugit, quasi minus autem molestiae modi odio adipisci ducimus distinctio a, eius ullam.
+
+            </p>
+        </div>
+       
+    </div>
+</section>
+<section id="client-section">
+    <h1 class="h-primary center"> Our Clients</h1>
+
+<div id="clients">
+    <div class="item">
+        
+        <img src="./images/logo3...png" alt="">
+    </div>
+    <div class="item">
+        <img src="./images/logo4.png" alt="">
+    </div>
+    <div class="item">
+        <img src="./images/logo5.png" alt="">
+    </div>
+    <div class="item">
+        <img src="./images/logo6.png" alt="">
+    </div>
+    </div>
+</section>
+
+<section id="contact-section">
+    <h1 class="h-primary center">Contact Us</h1>
+   <div id="contact-box">
+       <form action="">
+           <div class="form-group">
+               <label for="name">Name:</label>
+               <input type="text" name="name" id="name" placeholder="Enter Your Name">
+               
+           </div>
+           <div class="form-group">
+               <label for="phone">Phone:</label>
+               <input type="phone" name="name" id="phone" placeholder="Enter Your Phone no" >
+               
+           </div>
+           <div class="form-group">
+               <label for="email">Email:</label>
+               <input type="email" name="name" id="email" placeholder="Enter Your e-mail">
+               
+           </div>
+           <div class="form-group">
+               <label for="message">Message:</label>
+               <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            
+              </div>
+           </div>
+       </form>
+      
+   </div>
+  
+</section>
+<footer>
+   <div class="center">
+       Copyright & copy: MyMealOnline.Com || All Right are reserved
+   </div>
+</footer>
+  
+</body>
+<script>
+    function greet(){
+    var name =document.getElementById('name').value;
+    var string="hello"+name;
+    document.getElementsByClassName('greet')[0].innerHtml = string;
+  
+    }
+
+</script>
+</html>
