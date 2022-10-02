@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body onload="bodyLoad()" >
+  
+  <h1 id="date"></h1>
+  <h1 id="date1"></h1>
+  <h1 id="date2"></h1>
+
+  <script>
+
+    function bodyLoad(){
+    var now= new Date();
+    var date=document.getElementById('date');
+    
+    var day=now.getDay();
+    var month=now.getMonth();
+    var year=now.getFullYear();
+    var dt=now.getDate();
+    
+    var days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+    var months=["january","february","march","april","may","june","july","august","september","october","november","december"]
+    
+
+    date.innerHTML=`${days[day]} ${dt} ${months[month]} ${year} `
+     setInterval(getTime,1000);
+    }
+
+    function getTime(){
+      var now=new Date();
+      document.getElementById('date1').innerHTML=now.toLocaleTimeString();
+    }
+
+    function salute(){
+      var now=new Date();
+      var hrs= now.getHours();
+      var salute =document.getElementById('date2');
+
+      if( hrs>=0 && hrs<12){
+        salute.innerHTML="good morning"
+      }else{
+     salute.innerHTML="GOOD AFTERNOON "
+      }
+      
+    }
+    salute()
+  </script>
+</body>
+</html>
