@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 113vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(219, 208, 208, 0.438);
+    }
+
+    .container {
+        width: 65%;
+        height: 90%;
+        border-radius: 2%;
+        display: flex;
+        background-color: white;
+   
+
+    }
+
+    .inner-container1 {
+        width: 60%;
+        height: 100%;
+
+        padding: 4%;
+
+    }
+
+
+
+    .text {
+        height: 6%;
+        width: 90%;
+        margin-top: 2%;
+        border: 1px solid rgba(147, 128, 108, 0.25);
+        display: block;
+        margin-bottom: 6%;
+        outline: none;
+        border-radius: 2%;
+        padding-left: 2%;
+        content: "*";
+
+    }
+
+    .text1 {
+        height: 7%;
+        width: 90%;
+        margin-top: 2%;
+        border: 1px solid rgba(147, 128, 108, 0.25);
+        display: block;
+        margin-bottom: 6%;
+        outline: none;
+    }
+
+    .InputAddOn {
+        display: flex;
+        margin: 3% 0;
+
+    }
+
+    .InputAddOn-field {
+        flex: 1;
+    }
+
+    .InputAddOn-field:not(:first-child) {
+        border-left: 0;
+    }
+
+    .InputAddOn-field:not(:last-child) {
+        border-right: 0;
+    }
+
+    .InputAddOn-item {
+
+
+        font: inherit;
+        font-weight: normal;
+        background-color: white;
+        font-family: sans-serif;
+
+    }
+
+    .InputAddOn-field,
+    .InputAddOn-item {
+        border: 1px solid rgba(147, 128, 108, 0.25);
+        padding: 0.5em 0.75em;
+    }
+
+    .InputAddOn-field:first-child,
+    .InputAddOn-item:first-child {
+        border-radius: 2px 0 0 2px;
+    }
+
+    .InputAddOn-field:last-child,
+    .InputAddOn-item:last-child {
+        border-radius: 0 2px 2px 0;
+    }
+
+    .div1 {
+        border: 1px solid black;
+        height: 40px;
+        width: 414px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(147, 128, 108, 0.25);
+        justify-content: space-between;
+    }
+
+    .inner-container2 {
+        width: 40%;
+        height: 100%;
+
+        padding: 6%;
+    }
+
+    .c1 {
+        height: 7%;
+        width: 100%;
+        border: 1px solid rgba(147, 128, 108, 0.25);
+        display: flex;
+        align-items: center;
+        margin-top: 6%;
+
+    }
+
+    .required:after {
+        content: " *";
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="inner-container1">
+            <label style="font-family:sans-serif; font-size:25px;" class="required">Text Field</label> <br>
+            <input type="text" class="text" placeholder="Input Text">
+
+            <label style="font-family:sans-serif; font-size:25px ; ">Select Field<i class="fa fa-info-circle" style="margin-left:5px;font-size:19px;cursor: pointer;"></i></label> <br>
+            <select class="text" name="carlist" form="carform" style="height: 7%;">
+                <option value="volvo">Select</option>
+                <option value="saab">indore</option>
+                <option value="opel">jabalpur</option>
+                <option value="audi">gwalior</option>
+            </select>
+            <label style="font-family:sans-serif; font-size:25px">Text Area</label> <br>
+            <textarea name="TextArea" style=" padding-left:10px; font-size:1rem;border:1px solid rgba(147, 128, 108, 0.25); margin-top: 2%;
+              border-radius:2%;
+              display:block;
+              margin-bottom: 6%;" cols="42" rows="5" placeholder="Text Area"></textarea>
+
+            <label style="font-family:sans-serif; font-size:25px" class="required">Text Field with Add-ons</label><i class="fa fa-info-circle" style="margin-left:5px;font-size:19px; cursor: pointer;"></i> <br>
+            <div class="InputAddOn">
+                <span class="InputAddOn-item" style="border-right: none; ">Label</span>
+                <input class="InputAddOn-field" style="outline:none; ;" placeholder="Input Text">
+                <button class="InputAddOn-item" style="margin-right:9%">Button</button>
+            </div>
+            <div style="margin-top:6% ;">
+                <label style="font-family:sans-serif; font-size:25px">multiselect Field</label> <br>
+                <div class="div1">
+                    <div style="border:1px solid black;height: 30px; width:100px;  border: 1px solid rgba(147, 128, 108, 0.25);  margin-left:3px; border-radius: 15px; display: flex;
+                align-items: center;">
+                        <div
+                            style="border:1px solid black; height:25px;  border: 1px solid rgba(147, 128, 108, 0.25); width:28px; border-radius:80px; margin-left:3px; background-color: rgb(187, 182, 182); display:flex; justify-content:center">
+                            <img src="2.png" alt="" height="20px" width="22px">
+                        </div>
+                        <div>Label</div>
+                        <div
+                            style="border:1px solid black; height:15px;  border: 1px solid rgba(147, 128, 108, 0.25); width:18px; border-radius:80px; background-color: rgb(119, 119, 119);color: white;display: flex; justify-content: center;align-items: center;margin-left:6px; font-family: sans-serif;">
+                            x</div>
+                    </div>
+                    <div><img src="4.png" alt="logo" style="height:16px;width:16px; margin-right:4px; "></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="inner-container2">
+            <div class="c1">
+                <div style="font-size: 20px; color: rgb(221, 213, 213);"><img src="5.webp" alt="" height="7%" width="7%"
+                        style="  margin-left: 7px;"> Search</div>
+            </div>
+
+            <div
+                style="height: 8%;width:50%; border:1px solid rgba(147, 128, 108, 0.25); margin-top: 12%; display: flex; justify-content: space-between; align-items: center; padding: 13px; font-size: 25px;">
+                <div style="color: rgb(199, 187, 187);">-</div>
+                <div>1</div>
+                <div style="color: rgb(156, 148, 148);">+</div>
+            </div>
+
+            <div
+                style=" border-radius: 5px; background-color: rgb(156, 148, 148);height: 7%; width:60%;border: 1px solid rgb(156, 148, 148);; margin-top: 10%; display: flex; ;align-items: center;">
+                <div
+                    style=" border-radius: 5px;background-color:white;padding:8px 23px;box-shadow: 0px 1px 2px 1px black;">
+                    label</div>
+                <div style="margin-left:15px ; cursor: pointer;">label</div>
+            </div>
+            <div style="display: flex; margin-top: 30px;">
+                <input type="checkbox" style="height:30px; width:20px ;">
+                <div style="margin-left: 10px; font-size:25px">Checkbox</div>
+            </div>
+
+            <div style="display: flex; margin-top: 30px;">
+                <input type="radio" style="height:30px; width:20px ;">
+                <div style="margin-left: 10px; font-size:25px">Radio Button</div>
+            </div>
+
+            <div style="display: flex; margin-top: 30px; height: 50px;">
+                <div
+                    style="height:25px ;width:50px; border-radius:70px ;display:flex;align-items:center;background-color: rgb(212, 202, 202) ;">
+                    <div style=" height:23px; width:20px;border-radius:60px;background-color: white;margin-left: 2px;">
+                    </div>
+                </div>
+                <div style="margin-left: 10px;height:25px ; font-size:25px">Switch</div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
